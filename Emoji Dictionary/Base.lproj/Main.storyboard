@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iZz-Yk-agO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iZz-Yk-agO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -68,17 +68,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydZ-1F-RUI">
+                                <rect key="frame" x="126.5" y="431" width="122" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InW-g0-1bp">
+                                <rect key="frame" x="122.5" y="390" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oeb-2G-vh1" firstAttribute="centerX" secondItem="IMe-Eg-9bR" secondAttribute="centerX" id="2f0-9T-G1Q"/>
+                            <constraint firstItem="InW-g0-1bp" firstAttribute="top" secondItem="7ln-JT-tPx" secondAttribute="bottom" constant="20" id="9Xw-nL-BXp"/>
+                            <constraint firstItem="ydZ-1F-RUI" firstAttribute="top" secondItem="InW-g0-1bp" secondAttribute="bottom" constant="20" id="Gus-OT-tsN"/>
                             <constraint firstItem="oeb-2G-vh1" firstAttribute="top" secondItem="TK9-Lf-8Lv" secondAttribute="bottom" constant="40" id="Kn6-ig-UVe"/>
+                            <constraint firstItem="ydZ-1F-RUI" firstAttribute="centerX" secondItem="IMe-Eg-9bR" secondAttribute="centerX" id="PGn-Va-pFh"/>
+                            <constraint firstItem="InW-g0-1bp" firstAttribute="centerX" secondItem="IMe-Eg-9bR" secondAttribute="centerX" id="Tvx-QF-uhe"/>
                             <constraint firstItem="7ln-JT-tPx" firstAttribute="centerX" secondItem="IMe-Eg-9bR" secondAttribute="centerX" id="a2g-X0-8ge"/>
                             <constraint firstItem="oeb-2G-vh1" firstAttribute="centerX" secondItem="IMe-Eg-9bR" secondAttribute="centerX" id="jx1-DP-JYG"/>
                             <constraint firstItem="7ln-JT-tPx" firstAttribute="top" secondItem="oeb-2G-vh1" secondAttribute="bottom" constant="50" id="rNN-sB-H0W"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="ydZ-1F-RUI" id="Ms8-s7-x0U"/>
+                        <outlet property="categoryLabel" destination="InW-g0-1bp" id="Y2i-xS-XwV"/>
                         <outlet property="definitionLabel" destination="7ln-JT-tPx" id="HjJ-I3-8QD"/>
                         <outlet property="emojiLabel" destination="oeb-2G-vh1" id="Zoj-4c-Nqw"/>
                     </connections>
